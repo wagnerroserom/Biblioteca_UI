@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Componentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="#" class="navbar_brand">BibliotecaUI</a>
+            <ul class="navbar_nav">
+                <li><a href="#botones" class="navbar_link">Botones</a></li>
+                <li><a href="#tarjetas" class="navbar_link">Tarjetas</a></li>
+                <li><a href="#formularios" class="navbar_link">Formularios</a></li>
+                <li><a href="#modales" class="navbar_link">Modales</a></li>
+                <li><a href="#componentes" class="navbar_link">Componentes</a></li>
+            </ul>
+            <button class="navbar_toggle" onclick="toggleNavbar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    /*Contenido Principal*/
+    <main class="demo">
+        <header class="demo_header">
+            <h1 class="demo_title">BibliotecaUI</h1>
+            <p class="demo_subtittle">
+                Biblioteca de componentes UI reutilizables con CSS avanzado.
+            </p>
+        </header>
+
+        /*SECCION 1: BOTONES*/
+        <section class="demo_section" id="botones">
+            <h2 class="demo_section-tittle">1. Botones</h2>
+            <div class="demo_grid">
+                <div class="demo_example">
+                    <h4>Variantes de Botón</h4>
+                    <div class="demo_buttons">
+                        <button class="btn btn--primary">Primario</button>
+                        <button class="btn btn--secondary">Secundario</button>
+                        <button class="btn btn--ghost">Ghost</button>
+                        <button class="btn btn--danger">Peligro</button>
+                    </div>
+                </div>
+                <div class="demo_example">
+                    <h4>Tamaños de Botón</h4>
+                    <div class="demo_buttons">
+                        <button class="btn btn--primary btn--sm">Pequeño</button>
+                        <button class="btn btn--primary">Normal</button>
+                        <button class="btn btn--primary btn--lg">Grande</button>
+                    </div>
+                </div>
+                <div class="demo_example">
+                    <h4>Estados de Botón</h4>
+                    <div class="demo_buttons">
+                        <button class="btn btn--primary">Activo</button>
+                        <button class="btn btn--primary" disabled>Deshabilitado</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        /*SECCION 2: TARJETAS*/
+        <section class="demo_section" id="tarjetas">
+            <h2 class="demo_section-tittle"2. Tarjetas></h2>
+            <div class="demo_grid">
+                <div class="card">
+                    <div class="card_header">
+                        <h3 class="card_tittle">Tarjeta con Header</h3>
+                        <p class="card_subtittle">Subtitulo descriptivo</p>
+                    </div>
+                    <div class="card_body">
+                        <p>Esta es una tarjeta con header, body y footer. Ideal para mostrar información organizada y estructurada. </p>
+                    </div>
+                    <div class="card_footer">
+                        <button class="btn btn--primary btn--sm">Acción</button>
+                        <button class="btn btn--ghost btn--sm">Cancelar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_body">
+                        <h3 class="card_tittle">Tarjeta Simple</h3>
+                        <p>Tarjeta minimalista sólo con contenido. Ideal para información concisa y directa</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_body">
+                        <h3 class="card_tittle">Tarjeta con Badge</h3>
+                        <p>Ejemplo de tarjeta con elementos adicionales como badges y tooltips. </p>
+                        <div style="margin-top: 1rem;">
+                            <span class="badge badge--success">Activo</span>
+                            <span class="badge badge--warning">Pendiente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        /*SECCION 3: FORMULARIOS*/
+        
+
+    </main>
+
+</body>
+</html>
