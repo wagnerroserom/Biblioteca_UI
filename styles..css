@@ -602,7 +602,52 @@
             transform: rotate(180deg);
         }
 
+/*9. COMPONENTE TABS*/
+
+.tabs {
+            border: 1px solid var(--gray-200);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+        }
         
+        .tabs__nav {
+            display: flex;
+            background-color: var(--gray-50);
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .tabs__button {
+            flex: 1;
+            padding: var(--spacing-md) var(--spacing-lg);
+            background: none;
+            border: none;
+            font-weight: 600;
+            color: var(--gray-600);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            border-bottom: 3px solid transparent;
+        }
+        
+        .tabs__button:hover {
+            background-color: var(--gray-100);
+            color: var(--gray-800);
+        }
+        
+        .tabs__button.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+            background-color: white;
+        }
+        
+        .tabs__content {
+            padding: var(--spacing-lg);
+            display: none;
+        }
+        
+        .tabs__content.active {
+            display: block;
+        }
+
 
 
 
