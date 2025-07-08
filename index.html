@@ -108,10 +108,71 @@
             <div class="demo_grid">
                 <div class="demo_example">
                     <h4>Campos de Textos</h4>
-                    
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" id="nombre" class="form-input" placeholder="Ingresa tu nombre competo por favor">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="Ingresa tu email por favor">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea id="mensaje" class="form-input" rows="4" placeholder="Por favor escribe tu mensaje aquí..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="demo_example">
+                    <h4>Selects y Checkboxes</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="pais" class="form-label">País</label>
+                            <select id="pais" class="form-select">
+                                <option value="Selecciona un país"></option>
+                                <option value="ec">Ecuador</option>
+                                <option value="co">Colombia</option>
+                                <option value="pe">Perú</option>
+                                <option value="ve">Venezuela</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="terminos">
+                                <label for="terminos" class="form-label">Acepto los términos y condiciones</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-checkbox" id="newsletter">
+                                <label for="newsletter" class="form-label">Suscribirse al newsletter</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="demo-example">
+                    <h4>Formulario Completo</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="usuario" class="form-label">Usuario</label>
+                            <input type="text" id="usuario" class="form-input" placeholder="usuarioxxx">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" id="password" class="form-input" placeholder=".............">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="recordar">
+                                <label for="recordar" class="form-label">Recordar sesión</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn--primary" style="width: 100%">Iniciar Sesión</button>
+                    </form>
                 </div>
             </div>
         </section>
+
+        /*SECCION 4: MODALES*/
 
 
     </main>
