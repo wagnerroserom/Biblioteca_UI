@@ -1,290 +1,393 @@
 /*VARIABLES Y GUÍA DE ESTILOS*/
 
-:root{
-    /*COLORES PRINCIPALES*/
-    --primary-color: #6366f1;
-    --primary-dark: #4f46e5;
-    --primary-light: #a5b4fc;
-    --secondary-color: #f59e0b;
-    --secondary-dark: #d97706;
+:root {
+            /* Colores Principales */
+            --primary-color: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #a5b4fc;
+            --secondary-color: #f59e0b;
+            --secondary-dark: #d97706;
+            
+            /* Colores Neutros */
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            
+            /* Colores de Estado */
+            --success-color: #10b981;
+            --error-color: #ef4444;
+            --warning-color: #f59e0b;
+            --info-color: #3b82f6;
+            
+            /* Tipografía */
+            --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 1.875rem;
+            
+            /* Espaciado */
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+            
+            /* Bordes y Sombras */
+            --border-radius-sm: 0.25rem;
+            --border-radius-md: 0.5rem;
+            --border-radius-lg: 0.75rem;
+            --border-radius-xl: 1rem;
+            
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            
+            /* Transiciones */
+            --transition-fast: 0.15s ease-in-out;
+            --transition-normal: 0.3s ease-in-out;
+            --transition-slow: 0.5s ease-in-out;
+        }
 
-    /*COLORES NEUTROS*/
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-300: #d1d5db;
-    --gray-400: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
-
-    /*COLORES DE ESTADO*/
-    --success-color: #10b981;
-    --error-color: #ef4444;
-    --warning-color: #f59e0b;
-    --info-color: #3b82f6;
-
-    /*TIPOGRAFÍA A USARSE*/
-    --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-size-xs: 0.75rem;
-    --font-size-sm: 0.875rem;
-    --font-size-base: 1rem;
-    --font-size-lg: 1.125rem;
-    --font-size-xl: 1.25rem;
-    --font-size-2xl: 1.5rem;
-    --font-size-3xl: 1.875rem;
-
-    /*DISEÑO DE ESPACIADO*/
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-    --spacing-2xl: 3rem;
-
-    /*BORDES Y SOMBRAS*/
-    --border-radius-sm: 0.25rem;
-    --border-radius-md: 0.5rem;
-    --border-radius-lg: 0.75rem;
-    --border-radius-xl: 1rem;
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-
-    /*TRANSICIONES*/
-    --transition-fast: 0.15s ease-in-out;
-    --transition-normal: 0.3s ease-in-out;
-    --transition-slow: 0.5s ease-in-out;
-}
 
 /*RESET Y ESTILOS BASE*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-base);
-    line-height: 1.6;
-    color: var(--gray-50);
-}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-family-base);
+            font-size: var(--font-size-base);
+            line-height: 1.6;
+            color: var(--gray-700);
+            background-color: var(--gray-50);
+        }
+
 
 /*1. COMPONENTE PARA BOTÓN (btn)*/
 
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacing-sm) var(--spacing-md);
-    font-size: var(--font-size-base);
-    font-weight: 600;
-    line-height: 1.5;
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: var(--border-radius-md);
-    cursor: pointer;
-    transition: all var(--transition-fast);
-    user-select: none;
-    outline: none;
-    min-height: 2.5rem;
-    gap: var(--spacing-sm);
-}
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-sm) var(--spacing-md);
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            line-height: 1.5;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: var(--border-radius-md);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            user-select: none;
+            outline: none;
+            min-height: 2.5rem;
+            gap: var(--spacing-sm);
+        }
+        
+        .btn:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
 
-.btn:focus {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
-}
 
 /*VARIANTES DE BOTÓN*/
 .btn--primary {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-}
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .btn--primary:hover:not(:disabled) {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn--secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn--secondary:hover:not(:disabled) {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn--ghost {
+            background-color: transparent;
+            color: var(--gray-600);
+            border-color: transparent;
+        }
+        
+        .btn--ghost:hover:not(:disabled) {
+            background-color: var(--gray-100);
+            color: var(--gray-800);
+        }
+        
+        .btn--danger {
+            background-color: var(--error-color);
+            color: white;
+            border-color: var(--error-color);
+        }
+        
+        .btn--danger:hover:not(:disabled) {
+            background-color: #dc2626;
+            border-color: #dc2626;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        /* Tamaños de Botón */
+        .btn--sm {
+            padding: var(--spacing-xs) var(--spacing-sm);
+            font-size: var(--font-size-sm);
+            min-height: 2rem;
+        }
+        
+        .btn--lg {
+            padding: var(--spacing-md) var(--spacing-lg);
+            font-size: var(--font-size-lg);
+            min-height: 3rem;
+        }
+        
+        /* Estado Deshabilitado */
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+            box-shadow: none !important;
+        }
 
-.btn--primary:hover:not(:disabled) {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
-}
-
-.btn--secondary {
-    background-color: transparent;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.btn--secondary:hover:not(:disabled) {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
-}
-
-.btn--ghost {
-    background-color: transparent;
-    color: var(--gray-600);
-    border-color: transparent;
-}
-
-.btn--ghost:hover:not(:disabled) {
-    background-color: var(--gray-100);
-    color: var(--gray-800);
-}
-
-.btn--danger {
-    background-color: var(--error-color);
-    color: white;
-    border-color: var(--error-color);
-}
-
-.btn--danger:hover:not(:disabled) {
-    background-color: #dc2626;
-    border-color: #dc2626;
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
-}
-
-/* Tamaños de Botón */
-.btn--sm {
-    padding: var(--spacing-xs) var(--spacing-sm);
-    font-size: var(--font-size-sm);
-    min-height: 2rem;
-}
-
-.btn--lg {
-    padding: var(--spacing-md) var(--spacing-lg);
-    font-size: var(--font-size-lg);
-    min-height: 3rem;
-}
-
-/* Estado Deshabilitado */
-.btn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-    transform: none !important;
-    box-shadow: none !important;
-}
 
 /*2. COMPONENTES PARA TARJETA*/
 
 .card {
-    background-color: white;
-    border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-sm);
-    overflow: hidden;
-    transition: all var(--transition-normal);
-    border: 1px solid var(--gray-200);
-}
+            background-color: white;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            transition: all var(--transition-normal);
+            border: 1px solid var(--gray-200);
+        }
+        
+        .card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+        
+        .card__header {
+            padding: var(--spacing-lg);
+            border-bottom: 1px solid var(--gray-200);
+            background-color: var(--gray-50);
+        }
+        
+        .card__title {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--gray-900);
+            margin: 0;
+        }
+        
+        .card__subtitle {
+            font-size: var(--font-size-sm);
+            color: var(--gray-500);
+            margin-top: var(--spacing-xs);
+        }
+        
+        .card__body {
+            padding: var(--spacing-lg);
+        }
+        
+        .card__footer {
+            padding: var(--spacing-lg);
+            background-color: var(--gray-50);
+            border-top: 1px solid var(--gray-200);
+        }
 
-.card:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-2px);
-}
-
-.card__header {
-    padding: var(--spacing-lg);
-    border-bottom: 1px solid var(--gray-200);
-    background-color: var(--gray-50);
-}
-
-.card__title {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--gray-900);
-    margin: 0;
-}
-
-.card__subtitle {
-    font-size: var(--font-size-sm);
-    color: var(--gray-500);
-    margin-top: var(--spacing-xs);
-}
-
-.card__body {
-    padding: var(--spacing-lg);
-}
-
-.card__footer {
-    padding: var(--spacing-lg);
-    background-color: var(--gray-50);
-    border-top: 1px solid var(--gray-200);
-}
 
 /*3. COMPONENTES PARA FORMULARIO*/
 
 .form-group {
-    margin-bottom: var(--spacing-md);
-}
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .form-label {
+            display: block;
+            font-weight: 600;
+            color: var(--gray-700);
+            margin-bottom: var(--spacing-xs);
+            font-size: var(--font-size-sm);
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: 2px solid var(--gray-300);
+            border-radius: var(--border-radius-md);
+            font-size: var(--font-size-base);
+            transition: all var(--transition-fast);
+            background-color: white;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        
+        .form-input::placeholder {
+            color: var(--gray-400);
+        }
+        
+        .form-select {
+            width: 100%;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: 2px solid var(--gray-300);
+            border-radius: var(--border-radius-md);
+            font-size: var(--font-size-base);
+            background-color: white;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .form-select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        
+        .form-checkbox {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .form-checkbox input[type="checkbox"] {
+            width: 1.25rem;
+            height: 1.25rem;
+            accent-color: var(--primary-color);
+            cursor: pointer;
+        }
+        
+        .form-checkbox label {
+            cursor: pointer;
+            font-weight: normal;
+            margin: 0;
+        }
 
-.form-label {
-    display: block;
-    font-weight: 600;
-    color: var(--gray-700);
-    margin-bottom: var(--spacing-xs);
-    font-size: var(--font-size-sm);
-}
 
-.form-input {
-    width: 100%;
-    padding: var(--spacing-sm) var(--spacing-md);
-    border: 2px solid var(--gray-300);
-    border-radius: var(--border-radius-md);
-    font-size: var(--font-size-base);
-    transition: all var(--transition-fast);
-    background-color: white;
-}
+/*4. COMPONENTE NAVBAR*/
 
-.form-input:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-}
+.navbar {
+            background-color: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .navbar__container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4rem;
+        }
+        
+        .navbar__brand {
+            font-size: var(--font-size-xl);
+            font-weight: 800;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .navbar__nav {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-lg);
+        }
+        
+        .navbar__link {
+            color: var(--gray-600);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color var(--transition-fast);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .navbar__link:hover {
+            color: var(--primary-color);
+            background-color: var(--gray-100);
+        }
+        
+        .navbar__toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: var(--spacing-sm);
+        }
+        
+        .navbar__toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--gray-700);
+            margin: 5px 0;
+            transition: all var(--transition-fast);
+        }
+        
+        @media (max-width: 768px) {
+            .navbar__nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: white;
+                flex-direction: column;
+                padding: var(--spacing-md);
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all var(--transition-normal);
+            }
+            
+            .navbar__nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .navbar__toggle {
+                display: block;
+            }
+        }
 
-.form-input::placeholder {
-    color: var(--gray-400);
-}
-
-.form-select {
-    width: 100%;
-    padding: var(--spacing-sm) var(--spacing-md);
-    border: 2px solid var(--gray-300);
-    border-radius: var(--border-radius-md);
-    font-size: var(--font-size-base);
-    background-color: white;
-    cursor: pointer;
-    transition: all var(--transition-fast);
-}
-
-.form-select:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-}
-
-.form-checkbox {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-}
-
-.form-checkbox input[type="checkbox"] {
-    width: 1.25rem;
-    height: 1.25rem;
-    accent-color: var(--primary-color);
-    cursor: pointer;
-}
-
-.form-checkbox label {
-    cursor: pointer;
-    font-weight: normal;
-    margin: 0;
-}
+        
 
 
 
