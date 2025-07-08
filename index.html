@@ -295,9 +295,78 @@
         </section>
 
         /*SECCION 6: ALERTAS*/
-        
+        <section class="demo__section">
+            <h2 class="demo__section-title">6. Alertas</h2>
+            <div class="demo__grid">
+                <div class="demo__example">
+                    <div class="alert alert--success">
+                        <div class="alert__icon">✅</div>
+                        <div class="alert__content">
+                            <h4 class="alert__title">¡Éxito!</h4>
+                            <p class="alert__message">La operación finalizó correctamente.</p>
+                        </div>
+                    </div>
+                    <div class="alert alert--error">
+                        <div class="alert__icon">❌</div>
+                        <div class="alert__content">
+                            <h4 class="alert__title">Error</h4>
+                            <p class="alert__message">Ha ocurrido un error inesperado.</p>
+                        </div>
+                    </div>
+                    <div class="alert alert--warning">
+                        <div class="alert__icon">⚠️</div>
+                        <div class="alert__content">
+                            <h4 class="alert__title">Advertencia</h4>
+                            <p class="alert__message">Esta acción no se puede deshacer.</p>
+                        </div>
+                    </div>
+                    <div class="alert alert--info">
+                        <div class="alert__icon">ℹ️</div>
+                        <div class="alert__content">
+                            <h4 class="alert__title">Información</h4>
+                            <p class="alert__message">Nuevas funcionalidades disponibles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Footer -->
+        <footer style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e5e7eb;">
+            <p style="color: #6b7280; margin-bottom: 1rem;">
+                Biblioteca_UI - Biblioteca de Componentes UI con CSS Avanzado
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn--primary" onclick="downloadCSS()">Descargar CSS</button>
+                <button class="btn btn--secondary" onclick="viewDocumentation()">Ver Documentación</button>
+                <button class="btn btn--ghost" onclick="viewGithub()">GitHub</button>
+            </div>
+        </footer>
     </main>
+
+    <!-- Modal -->
+    <div id="exampleModal" class="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title">Modal de Ejemplo</h3>
+                <button class="modal__close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal__body">
+                <p>Este es un modal funcional con animaciones suaves y diseño responsive.</p>
+                <div class="form-group">
+                    <label for="modalInput" class="form-label">Campo de ejemplo</label>
+                    <input type="text" id="modalInput" class="form-input" placeholder="Escribe algo...">
+                </div>
+            </div>
+            <div class="modal__footer">
+                <button class="btn btn--primary" onclick="closeModal()">Guardar</button>
+                <button class="btn btn--secondary" onclick="closeModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script
+
 
 </body>
 </html>
