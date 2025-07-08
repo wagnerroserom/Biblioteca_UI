@@ -703,6 +703,86 @@
             color: #2563eb;
         }
 
+/*ESTILOS DE DEMOSTRACIÓN*/
+
+.demo {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-xl);
+        }
+        
+        .demo__header {
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .demo__title {
+            font-size: var(--font-size-3xl);
+            font-weight: 800;
+            color: var(--gray-900);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .demo__subtitle {
+            font-size: var(--font-size-lg);
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .demo__section {
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .demo__section-title {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .demo__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .demo__example {
+            background-color: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--gray-200);
+        }
+        
+        .demo__example h4 {
+            margin-bottom: var(--spacing-md);
+            color: var(--gray-800);
+        }
+        
+        .demo__buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .demo {
+                padding: var(--spacing-md);
+            }
+            
+            .demo__grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .demo__buttons {
+                flex-direction: column;
+            }
+        }
+    
 
 
 
