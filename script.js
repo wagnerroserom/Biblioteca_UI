@@ -100,13 +100,13 @@ function downloadCSS() {
     setTimeout(() => {
         button.textContent = originalText;
         button.disabled = false;
-        alert('En un proyecto real, aquí se descargaría el archivo CSS de Biblioteca_UI');
+        alert('https://github.com/wagnerroserom/Biblioteca_UI.git');
     }, 1000);
 }
 
 function viewDocumentation() {
     // En un proyecto real, esto podría abrir en una nueva ventana
-    alert('Documentación completa disponible en el repositorio del proyecto: https://github.com/wagnerroserom/Biblioteca_UI.git');
+    alert('https://github.com/wagnerroserom/Biblioteca_UI.git');
     // window.open('https://github.com/wagnerroserom/Biblioteca_UI.git', '_blank');
 }
 
