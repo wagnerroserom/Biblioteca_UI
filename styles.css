@@ -170,7 +170,7 @@ body {
 }
 
 .btn--danger:hover:not(:disabled) {
-    background-color: #dc2626;
+    background-color: #d02626;
     border-color: #dc2626;
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
@@ -610,22 +610,22 @@ body {
 }
 
 .badge--success {
-    background-color: #d1fae5;
+    background-color: #b5facd;
     color: #065f46;
 }
 
 .badge--warning {
-    background-color: #fef3c7;
+    background-color: #fceeb7;
     color: #92400e;
 }
 
 .badge--danger {
-    background-color: #fee2e2;
+    background-color: #ffdbdb;
     color: #991b1b;
 }
 
 .badge--info {
-    background-color: #dbeafe;
+    background-color: #adcef8;
     color: #1e40af;
 }
 
@@ -767,19 +767,19 @@ body {
 
 .alert--success {
     background-color: #f0fdf4;
-    border-color: #bbf7d0;
+    border-color: #b5facd;
     color: #15803d;
 }
 
 .alert--error {
     background-color: #fef2f2;
-    border-color: #fecaca;
+    border-color: #fbb6b6;
     color: #dc2626;
 }
 
 .alert--warning {
     background-color: #fffbeb;
-    border-color: #fed7aa;
+    border-color: #f4b267;
     color: #d97706;
 }
 
@@ -826,7 +826,7 @@ body {
     color: var(--gray-900);
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-sm);
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .demo__grid {
