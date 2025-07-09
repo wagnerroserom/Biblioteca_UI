@@ -106,14 +106,14 @@ function downloadCSS() {
 
 function viewDocumentation() {
     // En un proyecto real, esto podría abrir en una nueva ventana
-    alert('Documentación completa disponible en el repositorio del proyecto');
-    // window.open('https://tu-documentacion.com', '_blank');
+    alert('Documentación completa disponible en el repositorio del proyecto: https://github.com/wagnerroserom/Biblioteca_UI.git');
+    // window.open('https://github.com/wagnerroserom/Biblioteca_UI.git', '_blank');
 }
 
 function viewGithub() {
     // En un proyecto real, esto podría abrir GitHub
-    alert('Proyecto disponible en GitHub para colaboración y contribuciones');
-    // window.open('https://github.com/tu-usuario/tu-proyecto', '_blank');
+    alert('Proyecto disponible en GitHub para colaboración y contribuciones: https://github.com/wagnerroserom/Biblioteca_UI.git');
+    // window.open('https://github.com/wagnerroserom/Biblioteca_UI.git', '_blank');
 }
 
 // Inicialización cuando el DOM esté cargado
